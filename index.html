@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exchange</title>
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="primary-header">
+        <div>
+            <img class="logo" src="logo.png" alt="logo">
+        </div>
+
+        <button class="mobile-nav-toggle" aria-expanded="false" aria-controls="primary-navigation"><span class="sr-only"><i class='bx bx-menu-alt-right bx-md'></i></span></button>
+
+        <nav>
+            <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+                <li class="active">
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#about">About Us</a>
+                </li>
+                <li>
+                    <a href="#charts">Charts</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="container">
+            <div class="size-container">
+            <div class="img-text">
+                <h1 class="title">Exchange$ Pay</h1>
+                <p class="sub-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique officia repellat nemo modi, dignissimos tempora eum soluta incidunt facilis laborum error praesentium earum facere. Eius quisquam id molestiae ducimus dolores ab mollitia reprehenderit obcaecati nobis incidunt quaerat, ullam dicta.</p>
+            </div>
+            <div class="exchange-container">
+                <div class="currency">
+                    <select id="currency-one">
+                        <option value="AED">AED</option>
+                        <option value="ARS">ARS</option>
+                        <option value="AUD">AUD</option>
+                        <option value="BGN">BGN</option>
+                        <option value="BRL">BRL</option>
+                        <option value="BSD">BSD</option>
+                        <option value="CAD">CAD</option>
+                        <option value="CHF">CHF</option>
+                        <option value="CLP">CLP</option>
+                        <option value="CNY">CNY</option>
+                        <option value="COP">COP</option>
+                        <option value="CZK">CZK</option>
+                        <option value="DKK">DKK</option>
+                        <option value="DOP">DOP</option>
+                        <option value="EGP">EGP</option>
+                        <option value="EUR">EUR</option>
+                        <option value="FJD">FJD</option>
+                        <option value="GBP">GBP</option>
+                        <option value="GTQ">GTQ</option>
+                        <option value="HKD">HKD</option>
+                        <option value="HRK">HRK</option>
+                        <option value="HUF">HUF</option>
+                        <option value="IDR">IDR</option>
+                        <option value="ILS">ILS</option>
+                        <option value="INR">INR</option>
+                        <option value="ISK">ISK</option>
+                        <option value="JPY">JPY</option>
+                        <option value="KRW">KRW</option>
+                        <option value="KZT">KZT</option>
+                        <option value="MXN">MXN</option>
+                        <option value="MYR">MYR</option>
+                        <option value="NOK">NOK</option>
+                        <option value="NZD">NZD</option>
+                        <option value="PAB">PAB</option>
+                        <option value="PEN">PEN</option>
+                        <option value="PHP">PHP</option>
+                        <option value="PKR">PKR</option>
+                        <option value="PLN">PLN</option>
+                        <option value="PYG">PYG</option>
+                        <option value="RON">RON</option>
+                        <option value="RUB">RUB</option>
+                        <option value="RSD">RSD</option>
+                        <option value="SAR">SAR</option>
+                        <option value="SEK">SEK</option>
+                        <option value="SGD">SGD</option>
+                        <option value="THB">THB</option>
+                        <option value="TRY">TRY</option>
+                        <option value="TWD">TWD</option>
+                        <option value="UAH">UAH</option>
+                        <option value="USD" selected>USD</option>
+                        <option value="UYU">UYU</option>
+                        <option value="VND">VND</option>
+                        <option value="ZAR">ZAR</option>
+                    </select>
+                    <input type="number" id="amount-one" placeholder="0" value="1">
+                </div>
+                <div class="swap-rate-container">
+                    <a href="" class="btn" id="swap"><span>Swap</span><i></i></a>
+                    <div class="rate" id="rate"></div>
+                </div>
+                <div class="currency">
+                    <select id="currency-two">
+                        <option value="AED"><img src="https://flagicons.lipis.dev/flags/4x3/ae.svg" alt=""> AED</option>
+                        <option value="ARS">ARS</option>
+                        <option value="AUD">AUD</option>
+                        <option value="BGN">BGN</option>
+                        <option value="BRL">BRL</option>
+                        <option value="BSD">BSD</option>
+                        <option value="CAD">CAD</option>
+                        <option value="CHF">CHF</option>
+                        <option value="CLP">CLP</option>
+                        <option value="CNY">CNY</option>
+                        <option value="COP">COP</option>
+                        <option value="CZK">CZK</option>
+                        <option value="DKK">DKK</option>
+                        <option value="DOP">DOP</option>
+                        <option value="EGP">EGP</option>
+                        <option value="EUR">EUR</option>
+                        <option value="FJD">FJD</option>
+                        <option value="GBP">GBP</option>
+                        <option value="GTQ">GTQ</option>
+                        <option value="HKD">HKD</option>
+                        <option value="HRK">HRK</option>
+                        <option value="HUF">HUF</option>
+                        <option value="IDR">IDR</option>
+                        <option value="ILS">ILS</option>
+                        <option value="INR">INR</option>
+                        <option value="ISK">ISK</option>
+                        <option value="JPY">JPY</option>
+                        <option value="KRW">KRW</option>
+                        <option value="KZT">KZT</option>
+                        <option value="MXN">MXN</option>
+                        <option value="MYR">MYR</option>
+                        <option value="NOK">NOK</option>
+                        <option value="NZD">NZD</option>
+                        <option value="PAB">PAB</option>
+                        <option value="PEN">PEN</option>
+                        <option value="PHP">PHP</option>
+                        <option value="PKR">PKR</option>
+                        <option value="PLN">PLN</option>
+                        <option value="PYG">PYG</option>
+                        <option value="RON">RON</option>
+                        <option value="RUB">RUB</option>
+                        <option value="RSD" selected>RSD</option>
+                        <option value="SAR">SAR</option>
+                        <option value="SEK">SEK</option>
+                        <option value="SGD">SGD</option>
+                        <option value="THB">THB</option>
+                        <option value="TRY">TRY</option>
+                        <option value="TWD">TWD</option>
+                        <option value="UAH">UAH</option>
+                        <option value="USD">USD</option>
+                        <option value="UYU">UYU</option>
+                        <option value="VND">VND</option>
+                        <option value="ZAR">ZAR</option>
+                    </select>
+                    <input type="number" id="amount-two" placeholder="0">
+                </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="about-container">
+            <div class="about-size">
+                <h1 class="about-title">Throughout the years, our goal is the same: to always provide more, so that your business can grow easier, faster and safer</h1>
+                <h3 class="about-h3">Our vision for the future is to become the leaders of exchange places to cover the demand for our services, we will always set higher standards to be your reliable partner in business and everyday life</h3>
+                <p class="author">Exchange$ Pay</p>
+            </div>    
+        </div>
+        <div class="content-container">
+            <div class="content-size">
+                <div class="content-box">
+                    <img src="https://randomuser.me/api/portraits/men/21.jpg" alt="" class="user-icon">
+                    <h2>John</h2>
+                    <p>Director of Exchange$ Pay</p>
+                </div>
+                <div class="content-box">
+                    <img src="https://randomuser.me/api/portraits/men/78.jpg" alt="" class="user-icon">
+                    <h2>David</h2>
+                    <p>Lead Engineer</p>
+                </div>
+                <div class="content-box">
+                    <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="" class="user-icon">
+                    <h2>Angela </h2>
+                    <p>Head of Marketing</p>
+                </div>
+                <div class="content-box">
+                    <img src="https://randomuser.me/api/portraits/women/27.jpg" alt="" class="user-icon">
+                    <h2>Li</h2>
+                    <p>Head of HR and Culture</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="charts">
+        <div class="chart-container">
+            <div class="euro-chart">
+                <canvas id="myChart"></canvas>
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>Bid <span class="low-opacity">sell 1 EUR</span></th>
+                        <th>Ask <span class="low-opacity">buy 1 EUR</span></th>
+                    </tr>
+                    <tr>
+                        <td>Min</td>
+                        <td>116.39</td>
+                        <td>116.85</td>
+                    </tr>
+                    <tr>
+                        <td>Avg</td>
+                        <td>117.239</td>
+                        <td>117.549</td>
+                    </tr>
+                    <tr>
+                        <td>Max</td>
+                        <td>117.85</td>
+                        <td>118.43</td>
+                    </tr>
+                </table>
+                <p class="explanation">These values represent the daily average of the Bid and Ask rates Exchange$ receives from many data sources</p>
+            </div>
+            <div class="euro-chart">
+                <canvas id="myChart_1"></canvas>
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>Bid <span class="low-opacity">sell 1 USD</span></th>
+                        <th>Ask <span class="low-opacity">buy 1 USD</span></th>
+                    </tr>
+                    <tr>
+                        <td>Min</td>
+                        <td>111.74</td>
+                        <td>112.16</td>
+                    </tr>
+                    <tr>
+                        <td>Avg</td>
+                        <td>112.38</td>
+                        <td>112.65</td>
+                    </tr>
+                    <tr>
+                        <td>Max</td>
+                        <td>112.65</td>
+                        <td>113.19</td>
+                    </tr>
+                </table>
+                <p class="explanation">These values represent the daily average of the Bid and Ask rates Exchange$ receives from many data sources</p>
+            </div>
+            <div class="euro-chart">
+                <canvas id="myChart_2"></canvas>
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>Bid <span class="low-opacity">sell 1 GBP</span></th>
+                        <th>Ask <span class="low-opacity">buy 1 GBP</span></th>
+                    </tr>
+                    <tr>
+                        <td>Min</td>
+                        <td>135.02</td>
+                        <td>135.55</td>
+                    </tr>
+                    <tr>
+                        <td>Avg</td>
+                        <td>136.11</td>
+                        <td>136.48</td>
+                    </tr>
+                    <tr>
+                        <td>Max</td>
+                        <td>137.02</td>
+                        <td>137.71</td>
+                    </tr>
+                </table>
+                <p class="explanation">These values represent the daily average of the Bid and Ask rates Exchange$ receives from many data sources</p>
+            </div>
+        </div>
+
+        <div class="social-container">
+            <div class="social-size">
+                <h4 class="social-title">Convert on all devices</h4>
+                <h2 class="social-subtitle">Download the Exchange$ Currency Convert app</h2>
+                <div class="social">
+                    <a href="http://www.appstore.com" class="download-box"><i class="bx bxl-apple icon"></i>App Store</a>
+                    <a href="http://play.google.com" class="download-box"><i class="bx bxl-play-store icon"></i>Play Store</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="social-container con1">
+            <div class="contact-size">
+                <div class="contact-info">
+                    <h2 class="contact-title">Contact & Informations</h2>
+                    <p><i class='bx bx-location-plus contact-icon icon1'></i>Loacation 00</p>
+                    <p><i class='bx bx-phone contact-icon icon1'></i>+00-000-000-0000</p>
+                    <p><i class='bx bx-envelope contact-icon icon1'></i>email@email.com</p>
+                    <div>
+                        <a href="http://www.facebook.com"><i class='bx bxl-facebook-circle contact-icon icon2'></i></a>
+                        <a href="http://www.instagram.com"><i class='bx bxl-instagram-alt contact-icon icon2'></i></a>
+                        <a href="http://www.twitter.com"><i class='bx bxl-twitter contact-icon icon2'></i></a>
+                        <a href="http://www.linkedin.com"><i class='bx bxl-linkedin-square contact-icon icon2'></i></a>
+                    </div>
+                    <div class="logo-container">
+                        <img class="contact-logo" src="logo.png" alt="logo-img">
+                    </div>
+                </div>
+                <div class="contact-message">
+                    <div>
+                        <form action="https://getform.io/f/f50b9aaa-1f75-41df-9eee-0a152fd6dce5" method="POST">
+                            <h2 class="contact-title">Contact Us</h2>
+                            <input type="text" name="name" class="field" placeholder="Full Name">
+                            <input type="email" name="email" class="field" placeholder="name@email.com">
+                            <input type="text" name="phone" class="field" placeholder="Phone Number">
+                            <textarea class="field area" name="message" placeholder="Message..."></textarea>
+                            <button type="submit" class="message-btn">SEND</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script 
+        src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js" 
+        integrity="sha512-sW/w8s4RWTdFFSduOTGtk4isV1+190E/GghVffMA9XczdJ2MDzSzLEubKAs5h0wzgSJOQTRYyaz73L3d6RtJSg==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer">
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
