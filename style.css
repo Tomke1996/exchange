@@ -602,6 +602,9 @@ th, td {
     .content-size {
         flex-direction: column;
     }
+    .content-box {
+        margin-right: 0;
+    }   
     .download-box {
         font-size: 16px;
         padding: 10px 20px;
